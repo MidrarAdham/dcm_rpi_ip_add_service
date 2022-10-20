@@ -5,11 +5,11 @@ This script gets the ip address of the current machine and send it over to a rem
 ## Requirements:
 
 - Install pip using the following command:
-    - sudo apt install python3-pip
+    - ```sudo apt install python3-pip```
 - Install bcrypt using the following command:
-    - sudo pip3 install -U "bcrypt<4.0.0"
+    - ```sudo pip3 install -U "bcrypt<4.0.0"```
 - Install paramiko using the following command:
-    - sudo pip3 install paramiko
+    - ```sudo pip3 install paramiko```
 
 ## What does system service do?
 
@@ -40,4 +40,5 @@ WantedBy=multi-user.target
 - To run the service, type the following command:
     - sudo systemctl enable [name of the service]
     - sudo systemctl start [name of the service]
-
+Once done, you should the following output indicating that the service is working:
+![Output](service.png)
