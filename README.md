@@ -3,7 +3,9 @@
 This script gets the ip address of the current machine and send it over to a remote host. The remote host is the white linux computer that midrar is working on right now.
 
 ## Requirements:
-
+- Before starting the setup process, type the following two commands on your terminal:
+    - ```sudo apt update```
+    - ```sudo apt upgrade```
 - Install pip using the following command:
     - ```sudo apt install python3-pip```
 - Install bcrypt using the following command:
