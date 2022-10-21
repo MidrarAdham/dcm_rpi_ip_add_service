@@ -35,7 +35,7 @@ User=pi
 [install]
 WantedBy=multi-user.target
 ```
-- Change [PATH TO PYTHON SCRIPT] to the path where the Python script is located in you machine.
+- Change [PATH TO PYTHON SCRIPT] to the path where the Python script is located in your machine.
     - You can get the path where the Python scriptn is located by typing the following command:
         - ```pwd```
 - Save and exit the service file.
