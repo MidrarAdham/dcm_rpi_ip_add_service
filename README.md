@@ -20,18 +20,17 @@ We create a service to get systemd to run the python script every time the Pi bo
 ### How to create a service?
 
 - Type the following command to start creating a service:
-    - ```sudo nano /lib/systemd/system/[name].service```
+    - ```sudo nano /etc/systemd/system/[name].service```
+    - **DO NOT USE /lib/systemd/system/ PATH.**
     - In the name field, write the name of the service that will be created.
     - Hint: Always use a short and easy name to remember; this code will be used by other colleagues.
 - Within the file, paste the following:
 ```
 [Unit]
-Description=pi
+Description=this service will send the ip address on every boot.
 After=network.target
 [Service]
 ExecStart=/usr/bin/python3 [PATH TO PYTHON SCRIPT]
-Restart=always
-User=pi
 [install]
 WantedBy=multi-user.target
 ```
