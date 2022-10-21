@@ -13,10 +13,6 @@ This script gets the ip address of the current machine and send it over to a rem
 - Install paramiko using the following command:
     - ```sudo pip3 install paramiko```
 
-## What does system service do?
-
-We create a service to get systemd to run the python script every time the Pi boots.
-
 ### How to create a service?
 
 - Type the following command to start creating a service:
