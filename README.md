@@ -17,7 +17,7 @@ This script gets the ip address of the current machine and send it over to a rem
 
 - Type the following command to start creating a service:
     - ```sudo nano /etc/systemd/system/[name].service```
-    - **DO NOT USE /lib/systemd/system/[name].service
+    - **DO NOT USE /lib/systemd/system/[name].service**
     - In the name field, write the name of the service that will be created.
     - Hint: Always use a short and easy name to remember; this code will be used by other colleagues.
 - Within the file, paste the following:
