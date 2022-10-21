@@ -13,7 +13,7 @@ This script gets the ip address of the current machine and send it over to a rem
 - Install paramiko using the following command:
     - ```sudo pip3 install paramiko```
 
-### How to create a service?
+## How to create a service?
 
 - Type the following command to start creating a service:
     - ```sudo nano /etc/systemd/system/[name].service```
