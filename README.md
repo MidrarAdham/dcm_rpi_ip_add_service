@@ -34,8 +34,8 @@ WantedBy=multi-user.target
         - ```pwd```
 - Save and exit the service file.
 - To run the service, type the following command:
-    - sudo systemctl enable [name of the service]
-    - sudo systemctl start [name of the service]
+    - sudo systemctl enable find_ip.service
+    - sudo systemctl start find_ip.service
 
 Once done, you should the following output indicating that the service is working:
 ![Output](service.png)
