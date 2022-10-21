@@ -16,11 +16,10 @@ This script gets the ip address of the current machine and send it over to a rem
 ## How to create a service?
 
 - Type the following command to start creating a service:
-    - ```sudo nano /etc/systemd/system/[name].service```
-    - **DO NOT USE /lib/systemd/system/[name].service**
+    - ```sudo nano /etc/systemd/system/find_ip.service```
+    - **DO NOT USE /lib/systemd/system/**
     - In the name field, write the name of the service that will be created.
-    - Hint: Always use a short and easy name to remember; this code will be used by other colleagues.
-- Within the file, paste the following:
+- Within the service file, paste the following:
 ```
 [Unit]
 Description=this service will send the ip address on every boot.
