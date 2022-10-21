@@ -37,5 +37,6 @@ WantedBy=multi-user.target
 - To run the service, type the following command:
     - sudo systemctl enable [name of the service]
     - sudo systemctl start [name of the service]
+
 Once done, you should the following output indicating that the service is working:
 ![Output](service.png)
