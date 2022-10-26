@@ -26,7 +26,7 @@ Description=this service will send the ip address on every boot.
 After=network.target
 [Service]
 ExecStart=/usr/bin/python3 [PATH TO PYTHON SCRIPT]
-[install]
+[Install]
 WantedBy=multi-user.target
 ```
 - Change [PATH TO PYTHON SCRIPT] to the path where the Python script is located in your machine.
