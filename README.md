@@ -1,6 +1,11 @@
 ## Description:
 
-This script gets the ip address of the current machine and send it over to a remote host. The remote host is the white linux computer that midrar is working on right now.
+This script gets the IP address of the current machine and sends it over to a remote host. The remote host is the white Linux computer that Midrar is working on right now.
+
+### Note:
+
+**Contact Midrar to get Linux computer ip, hostname, and password**
+**midrar@pdx.edu**
 
 ## Requirements:
 - Before starting the setup process, type the following two commands on your terminal:
@@ -25,17 +30,17 @@ This script gets the ip address of the current machine and send it over to a rem
 Description=this service will send the ip address on every boot.
 After=network.target
 [Service]
-ExecStart=/usr/bin/python3 [PATH TO PYTHON SCRIPT]
+ExecStart=/usr/bin/python3 [PATH-TO-find_ip_address.py-SCRIPT]
 [Install]
 WantedBy=multi-user.target
 ```
-- Change [PATH TO PYTHON SCRIPT] to the path where the Python script is located in your machine.
-    - You can get the path where the Python scriptn is located by typing the following command:
+- Change [PATH TO PYTHON SCRIPT] to the path where the Python script is located on your machine.
+    - You can get the path where the Python script is located by typing the following command:
         - ```pwd```
 - Save and exit the service file.
 - To run the service, type the following command:
-    - sudo systemctl enable find_ip.service
-    - sudo systemctl start find_ip.service
+    - ```sudo systemctl enable find_ip.service```
+    - ```sudo systemctl start find_ip.service```
 
 Once done, you should the following output indicating that the service is working:
 ![Output](service.png)
